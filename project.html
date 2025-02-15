@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Your Grandpa's Grill</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #hero {
+            background-color: cornsilk;
+            color: black;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        #menu, #about, #reservation, #location, #testimonials, #contact {
+            margin: 3rem 0;
+        }
+
+        .menu-item, .about-item, .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .menu-item img, .about-item img, .contact-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 1rem;
+        }
+
+        .menu-details h4, .about-details h4, .contact-details h4 {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .testimonial {
+            background-color: #e0e0e0;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        .map-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .about-image, .contact-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Not Your Grandpa's Grill</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="images/logo.png" alt="Restaurant Logo" class="header-image">
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Welcome to Not Your Grandpa's Grill</h2>
+                <p>Experience the finest burgers in town.</p><br>
+                <p>The "Not Your Grandpa's Grill" wasn't much to look at from the outside—a faded red awning, a chipped "open" sign, and a window perpetually steamed up with the aroma of sizzling beef. But within those walls, nestled on a quiet corner of Elm Street, resided a burger so legendary that people would drive for hours to get a taste.</p>
+            </div>
+        </section>
+        <section id="menu" class="container">
+            <h3>Our Menu</h3>
+            <div class="menu-item">
+                <img src="https://unsplash.com/photos/hamburger-with-vegetables-0zgNo99FYLk" alt="Veg Burger">
+                <div class="menu-details">
+                    <h4>Veg Burger</h4>
+                    <p>200 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://unsplash.com/photos/a-basket-of-french-fries-sitting-on-top-of-a-wooden-table-ChXHveqrb28" alt="Fries">
+                <div class="menu-details">
+                    <h4>Fries</h4>
+                    <p>100 Rs</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://unsplash.com/photos/a-group-of-different-colored-drinks-sitting-next-to-each-other-7-yYp2RW2no" alt="Mocktails">
+                <div class="menu-details">
+                    <h4>Mocktails</h4>
+                    <p>80 Rs</p>
+                </div>
+            </div>
+            <!-- Add more dishes as needed -->
+        </section>
+        <section id="about" class="container">
+            <h3>About Us</h3>
+            <p>It all started with a young man named Max, who inherited his grandfather's old burger joint. Max wasn't a fancy chef, but he possessed an almost mystical ability to blend the perfect patty—a secret blend of locally sourced beef, a hint of garlic, and a touch of his grandmother's special spice. The burgers were cooked on a vintage grill, the flames dancing a rhythmic ballet as Max flipped each patty with practiced ease.</p>
+            <img src="https://images.app.goo.gl/4UFNaBDEeCMF51Ag9" alt="Restaurant Image" class="about-image">
+        </section>
+        <section id="reservation" class="container">
+            <h3>Make a Reservation</h3>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <label for="time">Time:</label><br>
+                <input type="time" id="time" name="time" required><br>
+                <label for="people">Number of People:</label><br>
+                <input type="number" id="people" name="people" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="location" class="container">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.393846993088!2d79.08957577530396!3d21.136719080539798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0bc623fcf55%3A0x3d8f3f55d58d83e7!2sZip%20By%20Spree%20Hotels%20Orient!5e0!3m2!1sen!2sin!4v1739615098793!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="testimonials" class="container">
+            <h3>Customer Testimonials</h3>
+            <div class="testimonial">
+                <p>"Amazing burgers and great service!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"A fantastic dining experience."</p>
+                <p>- Jane Smith</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </section>
+        <section id="contact" class="container">
+            <h3>Contact Us</h3>
+            <p>Email: contact@notyourgrandpasgrill.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Foodie Lane, Flavor Town</p>
+            <img src="https://images.app.goo.gl/xZmAUUAWpecBh3dBA" alt="
